@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepDark — Ламповый Майнкрафт</title>
+    <style>
+        /* Стили с атмосферой Deep Dark 1.19 */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a12;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('https://images.contentstack.io/v3/assets/blt6542b4bca9e630c2/blt3a0a9d2a7e3e5b1a/62a2d4a1a3a1a86a8a8b7b7c/minecraft-deep-dark-header.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        header {
+            background: rgba(26, 26, 46, 0.8);
+            color: #f8f8f8;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 3px solid #6d28d9;
+            box-shadow: 0 0 20px rgba(123, 63, 228, 0.3);
+            backdrop-filter: blur(5px);
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 0 0 15px #8b5cf6, 0 0 30px #7b3fe4;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+        .tagline {
+            font-style: italic;
+            opacity: 0.9;
+            text-shadow: 0 0 5px #a78bfa;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .section {
+            background: rgba(20, 20, 40, 0.85);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid #7b3fe4;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #b794f4;
+            margin-top: 0;
+            text-shadow: 0 0 10px rgba(123, 63, 228, 0.5);
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .feature {
+            background: rgba(58, 58, 90, 0.6);
+            padding: 1rem;
+            border-radius: 8px;
+            flex: 1 1 200px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+        }
+        .feature:hover {
+            background: rgba(70, 70, 110, 0.7);
+            box-shadow: 0 5px 15px rgba(123, 63, 228, 0.4);
+        }
+        .feature h3 {
+            color: #d8b4fe;
+            margin-top: 0;
+        }
+        .button {
+            display: inline-block;
+            background: linear-gradient(90deg, #6d28d9, #8b5cf6);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(123, 63, 228, 0.4);
+            margin: 0.5rem;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(123, 63, 228, 0.6);
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(26, 26, 46, 0.9);
+            color: #aaa;
+            margin-top: 2rem;
+            backdrop-filter: blur(5px);
+            border-top: 1px solid #4a2c82;
+        }
+        /* Анимация свечения */
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #8b5cf6; }
+            50% { text-shadow: 0 0 20px #a78bfa; }
+            100% { text-shadow: 0 0 10px #8b5cf6; }
+        }
+        .glow-text {
+            animation: glow 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo glow-text">DeepDark</div>
+        <div class="tagline">Сервер, где даже в Deep Dark уютно</div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>✨ О нас</h2>
+            <p>DeepDark — это <span class="glow-text">ламповый сервер</span> в духе обновления 1.19, где главное — атмосфера и комьюнити.</p>
+            <p>У нас вы найдёте:</p>
+            <ul>
+                <li>Генерацию <strong>Ancient Cities</strong> и новые пещеры</li>
+                <li>Отсутствие гриферов и читеров</li>
+                <li>Совместные стройки и ивенты</li>
+                <li>Вайб "как в старые добрые времена"</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>🔮 Особенности</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Deep Dark Biome</h3>
+                    <p>Исследуйте подземные города Скалка и Варда!</p>
+                </div>
+                <div class="feature">
+                    <h3>Ламповость</h3>
+                    <p>Только тёплая атмосфера и адекватные игроки.</p>
+                </div>
+                <div class="feature">
+                    <h3>Ваниль+</h3>
+                    <p>Лёгкие правки для удобства, но дух ванильного майнкрафта.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🎮 Как присоединиться?</h2>
+            <p>IP: <strong class="glow-text">deepdark.server.com</strong> (версия 1.19+)</p>
+            <p>Дискорд: <strong>https://discord.gg/deepdark</strong></p>
+            <a href="#" class="button">Вступить в Discord</a>
+            <a href="#" class="button">Правила сервера</a>
+        </section>
+    </div>
+
+    <footer>
+        © 2024 DeepDark | Неофициальный сервер Minecraft. Все права принадлежат Mojang.
+    </footer>
+</body>
+</html>
